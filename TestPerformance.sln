@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestParityPerformance", "TestParityPerformance\TestParityPerformance.csproj", "{C827D69F-74DB-452C-B9D6-BC41376F29ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPerformanceCore", "TestPerformanceCore\TestPerformanceCore.csproj", "{C827D69F-74DB-452C-B9D6-BC41376F29ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPerformanceNet", "TestPerformanceNet\TestPerformanceNet.csproj", "{AD58154C-B1FA-4FBA-81FF-6F05DBFBB055}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,11 +17,18 @@ Global
 		{C827D69F-74DB-452C-B9D6-BC41376F29ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C827D69F-74DB-452C-B9D6-BC41376F29ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C827D69F-74DB-452C-B9D6-BC41376F29ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD58154C-B1FA-4FBA-81FF-6F05DBFBB055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD58154C-B1FA-4FBA-81FF-6F05DBFBB055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD58154C-B1FA-4FBA-81FF-6F05DBFBB055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD58154C-B1FA-4FBA-81FF-6F05DBFBB055}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38F911D5-6194-47F8-BD8D-A487B87378EF}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal
