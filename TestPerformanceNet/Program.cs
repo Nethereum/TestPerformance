@@ -17,6 +17,7 @@ using Nethereum.Web3;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
+using Nethereum.JsonRpc.IpcClient;
 
 namespace TestPerformanceNet
 {
@@ -38,8 +39,11 @@ namespace TestPerformanceNet
                 listAccounts.Add("0x12890d2cce102216644c59dae5baed380d84830c");
                 listAccounts.Add("0x12890d2cce102216644c59dae5baed380d84830a");
             }
-            //var web3 = new Web3(new IpcClient("jsonrpc.ipc"));
-            var web3 = new Web3(new RpcClient(new Uri("http://127.0.0.1:8545")));
+            //parity ipc
+            var web3 = new Web3(new IpcClient("jsonrpc.ipc"));
+            //geth ipc (windows)
+           // var web3 = new Web3(new IpcClient("geth.ipc"));
+            //var web3 = new Web3(new RpcClient(new Uri("http://127.0.0.1:8545")));
             var start = DateTime.Now;
             Console.WriteLine(DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture));
             await listAccounts.ParallelForEachAsync(async s =>
