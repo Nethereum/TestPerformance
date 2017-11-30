@@ -1,6 +1,6 @@
 # TestPerformance
 
-Quick test of multi threading performance using .net core / net451.
+Quick test of multi threading performance using .net core / net462.
 
 NOTE: If you run this directly on Visual Studio DISABLE DIAGNOSTICS when running on .Net core. It is 100x slower.
 
